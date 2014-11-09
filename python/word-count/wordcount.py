@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 
 def word_count(phrase):
-    # Strip out newlines
-    clean_phrase = phrase.strip('\n')
     # Split at each whitespace
-    splitted_phrase = clean_phrase.split()
+    splitted_phrase = phrase.split()
     
     # Dictionary to contain the word count
     finaldict = {}
