@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 
 def distance(seq1, seq2):
-    result = 0
-    for i, c in enumerate(seq1):
-        if c != seq2[i]:
-            result += 1
-
-    return result
-
+    difference = 0
+    for a, b in zip(seq1, seq2):
+            if a != b:
+                difference += 1
+    return difference
