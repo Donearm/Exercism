@@ -3,5 +3,4 @@
 import datetime
 
 def add_gigasecond(date):
-    a = date + datetime.timedelta(seconds=10**9)
-    return a
+    return date + datetime.timedelta(seconds=10**9)
