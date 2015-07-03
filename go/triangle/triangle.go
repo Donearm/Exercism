@@ -1,12 +1,12 @@
 package triangle
 
-type Kind string
+type Kind int
 
 const (
-	Equ = "equilateral"
-	Iso = "isosceles"
-	Sca = "scalene"
-	NaT = "not a triangle"
+	Equ Kind = iota
+	Iso
+	Sca
+	NaT
 )
 
 func KindFromSides(a, b, c float64) Kind {
