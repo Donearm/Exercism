@@ -9,15 +9,9 @@ func SquareOfSums(n int) int {
 }
 
 func SumOfSquares(n int) int {
-	// make a slice to contain the squares of n
-	a := make([]int, n)
-	for x := 1; x <= n; x++ {
-		a = append(a, x*x)
-	}
-	// add up all the squares
 	var t int
-	for _, v := range a {
-		t += v
+	for x := 1; x <= n; x++ {
+		t += x*x
 	}
 	return t
 }
